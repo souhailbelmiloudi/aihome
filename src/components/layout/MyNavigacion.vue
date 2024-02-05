@@ -20,6 +20,12 @@ const logout = async () => {
   router.push({ name: 'Login' })
 }
 
+// abrir pagina de administracion
+
+const abrirPageAdmin = () => {
+ window.open('https://souhailbelmiloudi.github.io/SmartHomeAdmin/')
+}
+
 
 
 
@@ -58,6 +64,11 @@ const logout = async () => {
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><routerLink class="dropdown-item"  to="/aihome/Perfil">Perfil</routerLink></li>
               <li><routerLink class="dropdown-item" to="/aihome/dashboard">Dachboard</routerLink></li>
+              <li >
+                <p  class="dropdown-item" @click="abrirPageAdmin" >
+                  administracion
+                </p> 
+              </li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item"  @click="logout">Cerrar Sesion</a></li>
             </ul>
