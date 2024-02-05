@@ -316,6 +316,9 @@ const modificarEspacio = (nombre) => {
                     <a class="navbar-brand" data-bs-toggle="collapse"
                         :data-bs-target="'#navbarNav' + espacio.nombre.replace(/\s/g, '')">
                         {{ espacio.nombre }}
+                        <span class="brand-id">
+                             {{ espacio.id}}
+                        </span>
                     </a>
                     <!-- Botón de hamburguesa para pantallas pequeñas -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -411,6 +414,10 @@ const modificarEspacio = (nombre) => {
 
 }
 
+.brand-id {
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+  color: #491f1f; 
+}
 
 .l {
     display: inline;
