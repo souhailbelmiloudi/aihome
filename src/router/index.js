@@ -43,7 +43,7 @@ const routes = [
     meta: { requiresAuth: true } // Meta-información para indicar que la ruta requiere autenticación
   },
   {
-    path: '/SmaraihometHome/espacio/:id',
+    path: '/aihome/espacio/:id',
     name: 'Espacio',
     component: () => import('../components/EspasiosView.vue'),
     meta: { requiresAuth: true } // Meta-información para indicar que la ruta requiere autenticación
