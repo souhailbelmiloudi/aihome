@@ -39,12 +39,12 @@ onMounted(() => {
 
 // Función para abrir un dispositivo
 const abrirDispositivo = (id, tipo, idUser, idEspacio) => {
-    window.open(`http://localhost:5173/SmartHomeAdmin/detalle-dispositivo/${idUser}/${idEspacio}/${tipo}/${id}`);
+    window.open(`https://souhailbelmiloudi.github.io/SmartHomeAdmin/detalle-dispositivo/${idUser}/${idEspacio}/${tipo}/${id}`);
 };
 
 // Función para abrir un espacio
 const abrirEspacio = (idEspacio, idUser) => {
-    window.open(`http://localhost:5173/SmartHomeAdmin/espacio/${idUser}?espacioId=${idEspacio}`);
+    window.open(`https://souhailbelmiloudi.github.io/SmartHomeAdmin/espacio/${idUser}?espacioId=${idEspacio}`);
 };
 </script>
 
